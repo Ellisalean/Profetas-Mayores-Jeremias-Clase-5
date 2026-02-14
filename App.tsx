@@ -128,6 +128,15 @@ const App: React.FC = () => {
         <div className="absolute top-16 left-0 right-0 h-[3px] bg-white/5 z-[60]">
            <div className="h-full bg-red-600 transition-all duration-1000 ease-in-out" style={{ width: `${((currentSlideIndex + 1) / total) * 100}%` }} />
         </div>
+
+        <footer className="h-10 px-6 flex items-center justify-between bg-[#1a1a1a] border-t border-white/5 shrink-0">
+          <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40">
+            © {new Date().getFullYear()} Latin Theological Seminary
+          </p>
+          <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40 hidden sm:block">
+            Módulo de Jeremías • Formación Teológica
+          </p>
+        </footer>
       </main>
     </div>
   );
