@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111111;
+  color: white;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, .font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ef4444;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Transitions & Animations */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Utility for smooth image loading */
+img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Specific class for quiz diagnostics path if used */
+.clip-path-quiz-diag {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
